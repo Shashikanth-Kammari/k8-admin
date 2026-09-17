@@ -13,7 +13,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 # You need to already have a Role named "pod-reader" in that namespace.
 kind: RoleBinding
 metadata:
-  name: expense-pod-reader
+  name: expense-pod-reader-Binding
   namespace: expense
 subjects:
 # You can specify more than one "subject"
@@ -43,7 +43,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 # This cluster role binding allows anyone in the "manager" group to read secrets in any namespace.
 kind: ClusterRoleBinding
 metadata:
-  name: expense-cluster-reader
+  name: expense-cluster-reader-Binding
 subjects:
 - kind: User
   name: harish # Name is case sensitive
